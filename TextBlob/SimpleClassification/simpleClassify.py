@@ -37,9 +37,10 @@ print(blob.classify())
 for sentence in blob.sentences:
     print(sentence)
     print(sentence.classify())
+    print(format(sentence.noun_phrases()))
 
 # Compute accuracy
 print("Accuracy: {0}".format(cl.accuracy(test)))
 
 # Show 5 most informative features
-cl.show_informative_features(10)
+cl.show_informative_features(5)
