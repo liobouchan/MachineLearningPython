@@ -30,4 +30,7 @@ for sentence in textBlobParragraph.sentences:
     print("  Detected Language : " , sentence.detect_language())
     print("  Tags : " , sentence.tags) # Reference of POS https://www.ling.upenn.edu/courses/Fall_2003/ling001/penn_treebank_pos.html
     print("  Noun Phrases : " , sentence.noun_phrases)
-    print("  Word List: " , sentence.words)
+    print("  Word List : " , sentence.words)
+    print("  Sentiment : " , sentence.sentiment)
+    print("  Title : " , sentence.title()) # Is like to create a Title
+    print("                                   ")
