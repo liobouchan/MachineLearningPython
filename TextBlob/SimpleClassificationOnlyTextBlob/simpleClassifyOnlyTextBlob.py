@@ -33,4 +33,5 @@ for sentence in textBlobParragraph.sentences:
     print("  Word List : " , sentence.words)
     print("  Sentiment : " , sentence.sentiment)
     print("  Title : " , sentence.title()) # Is like to create a Title
+    print("  Translate to Spanish : " , sentence.translate(to="es"))
     print("                                   ")
