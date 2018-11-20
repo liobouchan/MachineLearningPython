@@ -30,8 +30,9 @@ for sentence in textBlobParragraph.sentences:
     print("  Detected Language : " , sentence.detect_language())
     print("  Tags : " , sentence.tags) # Reference of POS https://www.ling.upenn.edu/courses/Fall_2003/ling001/penn_treebank_pos.html
     print("  Noun Phrases : " , sentence.noun_phrases)
-    print("  Word List : " , sentence.words)
+    print("  Word List : " , sentence.words) # This excludes punctuation characters. If you want to include punctuation characters, access the tokens property.
     print("  Sentiment : " , sentence.sentiment)
     print("  Title : " , sentence.title()) # Is like to create a Title
-    print("  Translate to Spanish : " , sentence.translate(to="es"))
+    print("  Translate to Spanish : " , sentence.translate(to="es")) #  Uses the Google Translate API.
+    print("  Tokens : " , sentence.tokens)
     print("                                   ")
