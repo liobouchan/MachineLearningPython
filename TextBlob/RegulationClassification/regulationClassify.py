@@ -40,6 +40,12 @@ train = [
     ('tratándose de x deberán mantener', 'Requerimiento')
 ]
 
-cl = NaiveBayesClassifier(train)
+regulationClassifier = NaiveBayesClassifier(train)
 
-print(cl.classify(""))
+textBlobParagraph = TextBlob("Sentence" 
+                            
+                            , classifier=regulationClassifier)
+
+for sentence in textBlobParagraph.sentences:
+    print(sentence)
+    print(sentence.classify())
