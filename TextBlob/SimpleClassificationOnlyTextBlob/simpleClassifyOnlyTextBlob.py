@@ -17,7 +17,8 @@ train = [
 classificator = NaiveBayesClassifier(train)
 
 textBlobParragraph = TextBlob("The beer was amazing. But the hangover was horrible. "
-                "My boss was not pleased.", classifier=classificator)
+                "My boss was not pleased. "
+                "Leonardo Bouchan is a good Developer.", classifier=classificator)
 
 # Complete Classification of the TextBlob
     # print(textBlobParragraph)
@@ -28,4 +29,5 @@ for sentence in textBlobParragraph.sentences:
     print("  Classify : " , sentence.classify())
     print("  Detected Language : " , sentence.detect_language())
     print("  Tags : " , sentence.tags) # Reference of POS https://www.ling.upenn.edu/courses/Fall_2003/ling001/penn_treebank_pos.html
-    
+    print("  Noun Phrases : " , sentence.noun_phrases)
+    print("  Word List: " , sentence.words)
