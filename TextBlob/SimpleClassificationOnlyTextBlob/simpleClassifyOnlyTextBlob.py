@@ -35,4 +35,5 @@ for sentence in textBlobParragraph.sentences:
     print("  Title : " , sentence.title()) # Is like to create a Title
     print("  Translate to Spanish : " , sentence.translate(to="es")) #  Uses the Google Translate API.
     print("  Tokens : " , sentence.tokens)
+    print("  Upper Letters: " , sentence.upper())
     print("                                   ")
