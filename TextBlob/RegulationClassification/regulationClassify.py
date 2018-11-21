@@ -25,20 +25,24 @@ train = [
     ('Se considerarán', 'Obligación'),
     ('Deberán considerar', 'Obligación'),
     ('computarán', 'Obligación'),
+    #Ajustes de Obligaciones
+    ('Para efectos del reconocimiento de Operaciones, se incluirán las Operaciones a partir de la fecha en que se concierten' , 'Obligación'),
+
 
     ('podrá', 'Recomendación'),
     ('se podrán', 'Recomendación'),
     ('podrá aplicarse', 'Recomendación'),
     ('se podrán aplicar', 'Recomendación'),
 
-    ('deberán ser', 'Requerimiento'),
-    ('deberán establecer y mantener', 'Requerimiento'),
-    ('deberán considerar', 'Requerimiento'),
-    ('se considerará', 'Requerimiento'),
-    ('se considerarán', 'Requerimiento'),
-    ('se sumarán', 'Requerimiento'),
-    ('se realizará', 'Requerimiento'),
-    ('se convertirá', 'Requerimiento'),
+    # #('para el caso deberán ser', 'Requerimiento'),
+    # ('para el caso en que las Instituciones cuenten con Modelos de Valuación Internos,las posiciones valuadas mediante dichos modelos deberán ser ajustadas', 'Requerimiento'),
+    # #('tratandose de deberán establecer y mantener', 'Requerimiento'),
+    # ('tratandose de deberán considerar', 'Requerimiento'),
+    # #('en el caso de se considerará', 'Requerimiento'),
+    # #('en el caso de se considerarán', 'Requerimiento'),
+    # ('se sumarán', 'Requerimiento'),
+    # ('se realizará', 'Requerimiento'),
+    # ('se convertirá', 'Requerimiento'),
 ]
 
 regulationClassifier = NaiveBayesClassifier(train)
