@@ -25,7 +25,7 @@ train = [
     ('Se considerarán', 'Obligación'),
     ('Deberán considerar', 'Obligación'),
     ('computarán', 'Obligación'),
-    #Ajustes de Obligaciones
+    #Ajustes de Obligaciones No es bueno hacer ajustes
     ('Para efectos del reconocimiento de Operaciones, se incluirán las Operaciones a partir de la fecha en que se concierten' , 'Obligación'),
 
 
