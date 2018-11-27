@@ -18,7 +18,9 @@ classificator = NaiveBayesClassifier(train)
 
 textBlobParragraph = TextBlob("The beer was amazing. But the hangover was horrible. "
                 "My boss was not pleased. "
-                "Leonardo Bouchan is a good Developer.", classifier=classificator)
+                "Leonardo Bouchan is a good Developer. "
+                "I want to eat some potato chips and be happy. "
+                "Quiero comer unas papas y ser feliz gordito. ", classifier=classificator)
 
 # Complete Classification of the TextBlob
     # print(textBlobParragraph)

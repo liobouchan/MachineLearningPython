@@ -62,8 +62,9 @@ textBlobParagraph = TextBlob("Artículo 2 Bis Para tales efectos, tratándose de
     , classifier = regulationClassifier)
 
 for sentence in textBlobParagraph.sentences:
-    print("Enunciado : " , sentence)
+    #print("Enunciado : " , sentence)
     print("  Tipo : " , sentence.classify())
+    print("  Palabras Clave : " , sentence.noun_phrases)
     print("      ")
 
 regulationClassifier.show_informative_features(5)
