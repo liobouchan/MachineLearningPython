@@ -2,6 +2,7 @@ import tensorflow as tf
 from tensorflow import keras
 
 import numpy as np
+import matplotlib.pyplot as plt
 
 def decode_review(text):
     return ' '.join([reverse_word_index.get(i, '?') for i in text])
@@ -94,8 +95,6 @@ print(results)
 print()
 history_dict = history.history
 history_dict.keys()
-
-import matplotlib.pyplot as plt
 
 acc = history.history['acc']
 val_acc = history.history['val_acc']
