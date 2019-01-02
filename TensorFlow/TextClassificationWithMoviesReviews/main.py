@@ -15,13 +15,13 @@ imdb = keras.datasets.imdb
 
 print("Training entries: {}, labels: {}".format(len(train_data), len(train_labels)))
 print(train_data[0])
-print(len(train_data[0]), len(train_data[1]))
+print("Lenght of [0] and [1] ", len(train_data[0]), ",", len(train_data[1]))
 
 print()
 
 print("Testing entries: {}, labels: {}".format(len(test_data), len(test_labels)))
 print(test_data[0])
-print(len(test_data[0]), len(test_data[1]))
+print("Lenght of [0] and [1] ", len(test_data[0]), ",", len(test_data[1]))
 
 # A dictionary mapping words to an integer index
 word_index = imdb.get_word_index()
@@ -40,3 +40,17 @@ print("Train Data [0] " , decode_review(train_data[0]))
 print()
 print("Test Data [0] " , decode_review(test_data[0]))
 
+train_data = keras.preprocessing.sequence.pad_sequences(train_data,
+                                                        value=word_index["<PAD>"],
+                                                        padding='post',
+                                                        maxlen=256)
+
+test_data = keras.preprocessing.sequence.pad_sequences(test_data,
+                                                       value=word_index["<PAD>"],
+                                                       padding='post',
+                                                       maxlen=256)
+
+print()
+print("Standarizate lengths of train_data[0] and [1]", len(train_data[0]), ",", len(train_data[1]))
+print()
+print("Standarizate lengths of test_data[0] and [1]", len(test_data[0]), ",", len(test_data[1]))
