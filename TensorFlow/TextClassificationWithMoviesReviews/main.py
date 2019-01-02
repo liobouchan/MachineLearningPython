@@ -69,3 +69,13 @@ model.add(keras.layers.Dense(16, activation=tf.nn.relu))
 model.add(keras.layers.Dense(1, activation=tf.nn.sigmoid))
 
 model.summary()
+
+model.compile(optimizer=tf.train.AdamOptimizer(),
+              loss='binary_crossentropy',
+              metrics=['accuracy'])
+
+x_val = train_data[:10000]
+partial_x_train = train_data[10000:]
+
+y_val = train_labels[:10000]
+partial_y_train = train_labels[10000:]
