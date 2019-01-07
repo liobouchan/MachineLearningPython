@@ -247,11 +247,11 @@ def train_ngram_model(data,
                              unexpected_labels=unexpected_labels))
 
     # Vectorize texts.
-    x_train, x_val = vectorize_data.ngram_vectorize(
+    x_train, x_val = ngram_vectorize(
         train_texts, train_labels, val_texts)
 
     # Create model instance.
-    model = build_model.mlp_model(layers=layers,
+    model = mlp_model(layers=layers,
                                   units=units,
                                   dropout_rate=dropout_rate,
                                   input_shape=x_train.shape[1:],
