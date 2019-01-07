@@ -143,7 +143,8 @@ def ngram_vectorize(train_texts, train_labels, val_texts):
 mypath = Path().absolute()
 print(mypath)
 
-load_imdb_sentiment_analysis_dataset(mypath)
+data = load_imdb_sentiment_analysis_dataset(mypath)
+
 # get_num_words_per_sample("Hola Pruebita")
 # plot_sample_length_distribution("Hola Pruebita")
 
