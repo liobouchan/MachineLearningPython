@@ -7,6 +7,23 @@ from pathlib import Path
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.feature_selection import SelectKBest
 from sklearn.feature_selection import f_classif
+from tensorflow.python.keras import models
+from tensorflow.python.keras.layers import Dense
+from tensorflow.python.keras.layers import Dropout
+
+# Vectorization parameters
+# Range (inclusive) of n-gram sizes for tokenizing text.
+NGRAM_RANGE = (1, 2)
+
+# Limit on the number of features. We use the top 20K features.
+TOP_K = 20000
+
+# Whether text should be split into word or character n-grams.
+# One of 'word', 'char'.
+TOKEN_MODE = 'word'
+
+# Minimum document/corpus frequency below which a token will be discarded.
+MIN_DOCUMENT_FREQUENCY = 2
 
 def load_imdb_sentiment_analysis_dataset(data_path, seed=123):
     """Loads the IMDb movie reviews sentiment analysis dataset.
@@ -88,20 +105,6 @@ def plot_sample_length_distribution(sample_texts):
     plt.title('Sample length distribution')
     plt.show()
 
-# Vectorization parameters
-# Range (inclusive) of n-gram sizes for tokenizing text.
-NGRAM_RANGE = (1, 2)
-
-# Limit on the number of features. We use the top 20K features.
-TOP_K = 20000
-
-# Whether text should be split into word or character n-grams.
-# One of 'word', 'char'.
-TOKEN_MODE = 'word'
-
-# Minimum document/corpus frequency below which a token will be discarded.
-MIN_DOCUMENT_FREQUENCY = 2
-
 def ngram_vectorize(train_texts, train_labels, val_texts):
     """Vectorizes texts as n-gram vectors.
 
@@ -138,6 +141,49 @@ def ngram_vectorize(train_texts, train_labels, val_texts):
     x_train = selector.transform(x_train).astype('float32')
     x_val = selector.transform(x_val).astype('float32')
     return x_train, x_val
+
+def _get_last_layer_units_and_activation(num_classes):
+    """Gets the # units and activation function for the last network layer.
+
+    # Arguments
+        num_classes: int, number of classes.
+
+    # Returns
+        units, activation values.
+    """
+    if num_classes == 2:
+        activation = 'sigmoid'
+        units = 1
+    else:
+        activation = 'softmax'
+        units = num_classes
+    return units, activation
+
+def mlp_model(layers, units, dropout_rate, input_shape, num_classes):
+    """Creates an instance of a multi-layer perceptron model.
+
+    # Arguments
+        layers: int, number of `Dense` layers in the model.
+        units: int, output dimension of the layers.
+        dropout_rate: float, percentage of input to drop at Dropout layers.
+        input_shape: tuple, shape of input to the model.
+        num_classes: int, number of output classes.
+
+    # Returns
+        An MLP model instance.
+    """
+    op_units, op_activation = _get_last_layer_units_and_activation(num_classes)
+    model = models.Sequential()
+    model.add(Dropout(rate=dropout_rate, input_shape=input_shape))
+
+    for _ in range(layers-1):
+        model.add(Dense(units=units, activation='relu'))
+        model.add(Dropout(rate=dropout_rate))
+
+    model.add(Dense(units=op_units, activation=op_activation))
+    return model
+
+
 
 #Obteniendo la Path
 mypath = Path().absolute()
