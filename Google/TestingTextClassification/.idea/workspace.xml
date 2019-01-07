@@ -15,8 +15,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="211" column="24" selection-start-line="211" selection-end-line="212" />
+            <state relative-caret-position="248">
+              <caret line="229" column="27" selection-start-line="229" selection-start-column="27" selection-end-line="229" selection-end-column="27" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
                 <element signature="e#67#1857#0" />
@@ -25,6 +25,7 @@
                 <element signature="e#3367#4666#0" />
                 <element signature="e#4725#5087#0" />
                 <element signature="e#5307#6126#0" />
+                <element signature="e#6160#7341#0" />
               </folding>
             </state>
           </provider>
@@ -167,8 +168,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="211" column="24" selection-start-line="211" selection-end-line="212" />
+        <state relative-caret-position="248">
+          <caret line="229" column="27" selection-start-line="229" selection-start-column="27" selection-end-line="229" selection-end-column="27" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
             <element signature="e#67#1857#0" />
@@ -177,6 +178,7 @@
             <element signature="e#3367#4666#0" />
             <element signature="e#4725#5087#0" />
             <element signature="e#5307#6126#0" />
+            <element signature="e#6160#7341#0" />
           </folding>
         </state>
       </provider>
