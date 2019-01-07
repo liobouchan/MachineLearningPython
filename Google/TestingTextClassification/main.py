@@ -2,14 +2,17 @@ import os
 import random
 import matplotlib.pyplot as plt
 import numpy as np
+import tensorflow as tf
 
 from pathlib import Path
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.feature_selection import SelectKBest
 from sklearn.feature_selection import f_classif
+
 from tensorflow.python.keras import models
 from tensorflow.python.keras.layers import Dense
 from tensorflow.python.keras.layers import Dropout
+
 
 # Vectorization parameters
 # Range (inclusive) of n-gram sizes for tokenizing text.
