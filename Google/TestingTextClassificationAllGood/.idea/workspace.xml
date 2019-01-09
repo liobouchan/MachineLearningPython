@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b73a973-5e4f-4efb-962e-62333c250e27" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/IMDb_mlp_model.h5" beforeDir="false" afterPath="$PROJECT_DIR$/IMDb_mlp_model.h5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sepcnn_model.h5" beforeDir="false" afterPath="$PROJECT_DIR$/sepcnn_model.h5" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,10 +16,9 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-121">
-              <caret line="534" column="49" selection-start-line="534" selection-start-column="49" selection-end-line="534" selection-end-column="49" />
+            <state relative-caret-position="324">
+              <caret line="18" column="28" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="28" />
               <folding>
-                <element signature="e#0#9#0" expanded="true" />
                 <element signature="e#1404#3271#0" />
                 <element signature="e#3499#4096#0" />
                 <element signature="e#4176#4687#0" />
@@ -31,7 +29,6 @@
                 <element signature="e#8083#9216#0" />
                 <element signature="e#9277#9639#0" />
                 <element signature="e#9715#10534#0" />
-                <element signature="e#10940#14314#0" />
                 <element signature="e#14349#15542#0" />
                 <element signature="e#15784#18601#0" />
               </folding>
@@ -56,6 +53,7 @@
       <find>samples</find>
       <find>_split_training_and_validation_sets</find>
       <find>max_length</find>
+      <find>keras</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -68,11 +66,10 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-12" />
-    <option name="y" value="-12" />
-    <option name="width" value="1944" />
-    <option name="height" value="1044" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="949" />
+    <option name="width" value="980" />
+    <option name="height" value="1031" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -161,15 +158,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1296" height="696" extended-state="0" />
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16362192" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16375199" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.23404256" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.41030195" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -195,12 +192,16 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/IMDb_mlp_model.h5">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8265" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-121">
-          <caret line="534" column="49" selection-start-line="534" selection-start-column="49" selection-end-line="534" selection-end-column="49" />
+        <state relative-caret-position="324">
+          <caret line="18" column="28" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="28" />
           <folding>
-            <element signature="e#0#9#0" expanded="true" />
             <element signature="e#1404#3271#0" />
             <element signature="e#3499#4096#0" />
             <element signature="e#4176#4687#0" />
@@ -211,7 +212,6 @@
             <element signature="e#8083#9216#0" />
             <element signature="e#9277#9639#0" />
             <element signature="e#9715#10534#0" />
-            <element signature="e#10940#14314#0" />
             <element signature="e#14349#15542#0" />
             <element signature="e#15784#18601#0" />
           </folding>
