@@ -92,6 +92,9 @@ def load_imdb_sentiment_analysis_dataset(data_path, seed=123):
     random.seed(seed)
     random.shuffle(train_labels)
 
+    print('\n imprime' , train_labels)
+    print('\n imprime', np.array(train_labels))
+
     return ((train_texts, np.array(train_labels)),
             (test_texts, np.array(test_labels)))
 
@@ -245,6 +248,9 @@ def sequence_vectorize(train_texts, val_texts):
     # at the beginning.
     x_train = sequence.pad_sequences(x_train, maxlen=max_length)
     x_val = sequence.pad_sequences(x_val, maxlen=max_length)
+    print('x_train = ', x_train)
+    print('x_val = ', x_val)
+    print('tokenizer.word_index = ', tokenizer.word_index)
     return x_train, x_val, tokenizer.word_index
 
 def _get_last_layer_units_and_activation(num_classes):
@@ -567,8 +573,8 @@ def train_sequence_model(data,
 mypath = Path().absolute()
 print(mypath)
 
-data = load_imdb_sentiment_analysis_dataset(mypath)
-acc, loss = train_ngram_model(data)
+#data = load_imdb_sentiment_analysis_dataset(mypath)
+#acc, loss = train_ngram_model(data)
 #assert acc == pytest.approx(0.91, 0.02)
 #assert loss == pytest.approx(0.24, 0.02)
 # plot_sample_length_distribution("Hola Pruebita")

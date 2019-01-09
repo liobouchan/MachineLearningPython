@@ -17,8 +17,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="173">
-              <caret line="394" column="56" selection-start-line="394" selection-start-column="56" selection-end-line="394" selection-end-column="56" />
+            <state relative-caret-position="-121">
+              <caret line="534" column="49" selection-start-line="534" selection-start-column="49" selection-end-line="534" selection-end-column="49" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
                 <element signature="e#1404#3271#0" />
@@ -32,6 +32,8 @@
                 <element signature="e#9277#9639#0" />
                 <element signature="e#9715#10534#0" />
                 <element signature="e#10940#14314#0" />
+                <element signature="e#14349#15542#0" />
+                <element signature="e#15784#18601#0" />
               </folding>
             </state>
           </provider>
@@ -53,6 +55,7 @@
       <find>get_num</find>
       <find>samples</find>
       <find>_split_training_and_validation_sets</find>
+      <find>max_length</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -166,7 +169,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2003546" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.23404256" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -185,7 +188,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/main.py</url>
-          <line>397</line>
+          <line>403</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
@@ -194,8 +197,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="394" column="56" selection-start-line="394" selection-start-column="56" selection-end-line="394" selection-end-column="56" />
+        <state relative-caret-position="-121">
+          <caret line="534" column="49" selection-start-line="534" selection-start-column="49" selection-end-line="534" selection-end-column="49" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
             <element signature="e#1404#3271#0" />
@@ -209,6 +212,8 @@
             <element signature="e#9277#9639#0" />
             <element signature="e#9715#10534#0" />
             <element signature="e#10940#14314#0" />
+            <element signature="e#14349#15542#0" />
+            <element signature="e#15784#18601#0" />
           </folding>
         </state>
       </provider>
