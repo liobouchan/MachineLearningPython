@@ -392,6 +392,7 @@ def get_num_classes(labels):
         raise ValueError('Invalid number of labels: {num_classes}.'
                          'Please make sure there are at least two classes '
                          'of samples'.format(num_classes=num_classes))
+    print("\n Número de Classes Obtenidas : " , num_classes)
     return num_classes
 
 def train_ngram_model(data,
@@ -570,7 +571,6 @@ data = load_imdb_sentiment_analysis_dataset(mypath)
 acc, loss = train_ngram_model(data)
 #assert acc == pytest.approx(0.91, 0.02)
 #assert loss == pytest.approx(0.24, 0.02)
-# get_num_words_per_sample("Hola Pruebita")
 # plot_sample_length_distribution("Hola Pruebita")
 
 data2 = load_imdb_sentiment_analysis_dataset(mypath)

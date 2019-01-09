@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b73a973-5e4f-4efb-962e-62333c250e27" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../TestingTextClassification/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TestingTextClassification/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IMDb_mlp_model.h5" beforeDir="false" afterPath="$PROJECT_DIR$/IMDb_mlp_model.h5" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sepcnn_model.h5" beforeDir="false" afterPath="$PROJECT_DIR$/sepcnn_model.h5" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,10 +18,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="122">
-              <caret line="403" column="41" lean-forward="true" selection-start-line="403" selection-start-column="41" selection-end-line="403" selection-end-column="41" />
+            <state relative-caret-position="18">
+              <caret line="117" column="39" selection-start-line="117" selection-start-column="4" selection-end-line="117" selection-end-column="39" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
+                <element signature="e#6019#6319#0" />
               </folding>
             </state>
           </provider>
@@ -38,6 +40,10 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>FLAGS</find>
+      <find>get_num_words_per_sample</find>
+      <find>get_num</find>
+      <find>samples</find>
+      <find>_split_training_and_validation_sets</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -50,7 +56,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="x" value="-12" />
     <option name="y" value="-12" />
     <option name="width" value="1944" />
@@ -143,15 +149,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <frame x="-8" y="-8" width="1296" height="696" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16375199" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16362192" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.25044405" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.18794326" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -165,13 +171,25 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main.py</url>
+          <line>397</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="403" column="41" lean-forward="true" selection-start-line="403" selection-start-column="41" selection-end-line="403" selection-end-column="41" />
+        <state relative-caret-position="18">
+          <caret line="117" column="39" selection-start-line="117" selection-start-column="4" selection-end-line="117" selection-end-column="39" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#6019#6319#0" />
           </folding>
         </state>
       </provider>
