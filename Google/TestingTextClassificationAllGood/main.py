@@ -392,7 +392,7 @@ def get_num_classes(labels):
         raise ValueError('Invalid number of labels: {num_classes}.'
                          'Please make sure there are at least two classes '
                          'of samples'.format(num_classes=num_classes))
-    print("\n Número de Classes Obtenidas : " , num_classes)
+    print("\n from : get_num_classes Obtaining classes = " , num_classes)
     return num_classes
 
 def train_ngram_model(data,

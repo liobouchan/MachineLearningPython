@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b73a973-5e4f-4efb-962e-62333c250e27" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IMDb_mlp_model.h5" beforeDir="false" afterPath="$PROJECT_DIR$/IMDb_mlp_model.h5" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sepcnn_model.h5" beforeDir="false" afterPath="$PROJECT_DIR$/sepcnn_model.h5" afterDir="false" />
@@ -18,11 +17,21 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="117" column="39" selection-start-line="117" selection-start-column="4" selection-end-line="117" selection-end-column="39" />
+            <state relative-caret-position="173">
+              <caret line="394" column="56" selection-start-line="394" selection-start-column="56" selection-end-line="394" selection-end-column="56" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
+                <element signature="e#1404#3271#0" />
+                <element signature="e#3499#4096#0" />
+                <element signature="e#4176#4687#0" />
+                <element signature="e#4893#5957#0" />
                 <element signature="e#6019#6319#0" />
+                <element signature="e#6376#6665#0" />
+                <element signature="e#6730#8029#0" />
+                <element signature="e#8083#9216#0" />
+                <element signature="e#9277#9639#0" />
+                <element signature="e#9715#10534#0" />
+                <element signature="e#10940#14314#0" />
               </folding>
             </state>
           </provider>
@@ -157,7 +166,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.18794326" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2003546" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -185,11 +194,21 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="117" column="39" selection-start-line="117" selection-start-column="4" selection-end-line="117" selection-end-column="39" />
+        <state relative-caret-position="173">
+          <caret line="394" column="56" selection-start-line="394" selection-start-column="56" selection-end-line="394" selection-end-column="56" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#1404#3271#0" />
+            <element signature="e#3499#4096#0" />
+            <element signature="e#4176#4687#0" />
+            <element signature="e#4893#5957#0" />
             <element signature="e#6019#6319#0" />
+            <element signature="e#6376#6665#0" />
+            <element signature="e#6730#8029#0" />
+            <element signature="e#8083#9216#0" />
+            <element signature="e#9277#9639#0" />
+            <element signature="e#9715#10534#0" />
+            <element signature="e#10940#14314#0" />
           </folding>
         </state>
       </provider>
