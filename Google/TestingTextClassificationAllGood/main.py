@@ -26,7 +26,7 @@ from tensorflow.python.keras.layers import GlobalAveragePooling1D
 NGRAM_RANGE = (1, 2)
 
 # Limit on the number of features. We use the top 20K features.
-TOP_K = 20000
+TOP_K = 10000
 
 # Whether text should be split into word or character n-grams.
 # One of 'word', 'char'.
@@ -39,7 +39,7 @@ FLAGS = None
 
 # Limit on the length of text sequences. Sequences longer than this
 # will be truncated.
-MAX_SEQUENCE_LENGTH = 500
+MAX_SEQUENCE_LENGTH = 200
 
 def load_imdb_sentiment_analysis_dataset(data_path, seed=123):
     """Loads the IMDb movie reviews sentiment analysis dataset.
@@ -87,10 +87,10 @@ def load_imdb_sentiment_analysis_dataset(data_path, seed=123):
                 test_labels.append(0 if category == 'neg' else 1)
 
     # Shuffle the training data and labels.
-    random.seed(seed)
-    random.shuffle(train_texts)
-    random.seed(seed)
-    random.shuffle(train_labels)
+    #random.seed(seed)
+    #random.shuffle(train_texts)
+    #random.seed(seed)
+    #random.shuffle(train_labels)
 
     print('\n imprime' , train_labels)
     print('\n imprime', np.array(train_labels))
@@ -480,15 +480,15 @@ def train_ngram_model(data,
     return history['val_acc'][-1], history['val_loss'][-1]
 
 def train_sequence_model(data,
-                         learning_rate=1e-3,
-                         epochs=1000,
-                         batch_size=128,
+                         learning_rate=1e-9,
+                         epochs=10,
+                         batch_size=2,
                          blocks=2,
-                         filters=64,
+                         filters=8,
                          dropout_rate=0.2,
-                         embedding_dim=200,
-                         kernel_size=3,
-                         pool_size=3):
+                         embedding_dim=100,
+                         kernel_size=2,
+                         pool_size=2):
     """Trains sequence model on the given dataset.
     # Arguments
         data: tuples of training and test texts and labels.
@@ -573,8 +573,8 @@ def train_sequence_model(data,
 mypath = Path().absolute()
 print(mypath)
 
-#data = load_imdb_sentiment_analysis_dataset(mypath)
-#acc, loss = train_ngram_model(data)
+data = load_imdb_sentiment_analysis_dataset(mypath)
+acc, loss = train_ngram_model(data)
 #assert acc == pytest.approx(0.91, 0.02)
 #assert loss == pytest.approx(0.24, 0.02)
 # plot_sample_length_distribution("Hola Pruebita")
