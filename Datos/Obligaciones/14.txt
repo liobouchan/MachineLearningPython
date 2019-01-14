@@ -1,0 +1,1 @@
+El cálculo de la equivalencia en moneda nacional de dólares de los Estados Unidos de América se realizará tomando en cuenta el tipo de cambio del día último del mes.
