@@ -1,6 +1,7 @@
 from __future__ import print_function
 
 import pandas as pd
+import matplotlib.pyplot as plt
 
 print("\nPrint pandas version " , pd.__version__)
 
@@ -20,3 +21,7 @@ print("\n Print data downloaded CSV : \n" , california_housing_dataframe.describ
 
 #DataFrame.head, which displays the first few records of a DataFrame:
 print("\n Print DataFrame.head : \n" , california_housing_dataframe.head())
+
+#DataFrame.hist lets you quickly study the distribution of values in a column
+california_housing_dataframe.hist('housing_median_age')
+plt.show()
