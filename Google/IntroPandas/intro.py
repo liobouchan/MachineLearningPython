@@ -50,3 +50,9 @@ print("\n population.apply(lambda val: val > 1000000) ", population.apply(lambda
 cities['Area square miles'] = pd.Series([46.87, 176.53, 97.92])
 cities['Population density'] = cities['Population'] / cities['Area square miles']
 print("\n Cities Modified" , cities)
+
+#Modify the cities table by adding a new boolean column that is True if and only if both of the following are True:
+#The city is named after a saint.
+#The city has an area greater than 50 square miles.
+cities['Is wide and has saint name'] = (cities['Area square miles'] > 50) & cities['City name'].apply(lambda name: name.startswith('San'))
+print(cities)
