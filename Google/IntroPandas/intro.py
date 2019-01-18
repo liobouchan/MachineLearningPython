@@ -14,4 +14,9 @@ print("\n Print a DataFrame: \n " , pd.DataFrame({ 'City name': city_names, 'Pop
 
 #Load an entire file into a DataFrame
 california_housing_dataframe = pd.read_csv("https://download.mlcc.google.com/mledu-datasets/california_housing_train.csv", sep=",")
+
+#DataFrame.describe to show interesting statistics about a DataFrame
 print("\n Print data downloaded CSV : \n" , california_housing_dataframe.describe())
+
+#DataFrame.head, which displays the first few records of a DataFrame:
+print("\n Print DataFrame.head : \n" , california_housing_dataframe.head())
