@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bb504c88-204c-453f-b8dd-ef2af89bfcfe" name="Default Changelist" comment="" />
+    <list default="true" id="bb504c88-204c-453f-b8dd-ef2af89bfcfe" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Google/IntroPanda/intro.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -10,25 +12,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Keras/Embedding/Embedding.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-198">
-              <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
-              <folding>
-                <element signature="e#0#23#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Keras/Embedding/Embedding2.py">
+        <entry file="file://$PROJECT_DIR$/Google/IntroPanda/intro.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="918">
-              <caret line="51" column="89" selection-start-line="51" selection-start-column="89" selection-end-line="51" selection-end-column="89" />
+            <state relative-caret-position="54">
+              <caret line="3" column="14" lean-forward="true" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
               <folding>
-                <element signature="e#0#23#0" expanded="true" />
+                <element signature="e#0#37#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -51,6 +41,7 @@
       <list>
         <option value="$PROJECT_DIR$/Keras/Embedding/Embedding.py" />
         <option value="$PROJECT_DIR$/Keras/Embedding/Embedding2.py" />
+        <option value="$PROJECT_DIR$/Google/IntroPanda/intro.py" />
       </list>
     </option>
   </component>
@@ -75,13 +66,13 @@
             <path>
               <item name="MachineLearningPython" type="b2602c69:ProjectViewProjectNode" />
               <item name="MachineLearningPython" type="462c0819:PsiDirectoryNode" />
-              <item name="Keras" type="462c0819:PsiDirectoryNode" />
+              <item name="Google" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MachineLearningPython" type="b2602c69:ProjectViewProjectNode" />
               <item name="MachineLearningPython" type="462c0819:PsiDirectoryNode" />
-              <item name="Keras" type="462c0819:PsiDirectoryNode" />
-              <item name="Embedding" type="462c0819:PsiDirectoryNode" />
+              <item name="Google" type="462c0819:PsiDirectoryNode" />
+              <item name="IntroPanda" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -106,7 +97,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Embedding2">
+  <component name="RunManager" selected="Python.intro (1)">
     <configuration name="Embedding" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="MachineLearningPython" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -149,8 +140,52 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="intro (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="MachineLearningPython" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Google/IntroPandas" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Google/IntroPandas/intro.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="intro" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="MachineLearningPython" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Google/IntroPanda" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Google/IntroPanda/intro.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.intro (1)" />
+        <item itemvalue="Python.intro" />
         <item itemvalue="Python.Embedding2" />
         <item itemvalue="Python.Embedding" />
       </list>
@@ -177,7 +212,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.28060672" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.28060672" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -192,9 +227,19 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Keras/Embedding/Embedding2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="605">
+          <caret line="51" column="89" selection-start-line="51" selection-start-column="89" selection-end-line="51" selection-end-column="89" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Keras/Embedding/Embedding.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-198">
+        <state relative-caret-position="18">
           <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
@@ -202,12 +247,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Keras/Embedding/Embedding2.py">
+    <entry file="file://$PROJECT_DIR$/Google/IntroPanda/intro.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="918">
-          <caret line="51" column="89" selection-start-line="51" selection-start-column="89" selection-end-line="51" selection-end-column="89" />
+        <state relative-caret-position="54">
+          <caret line="3" column="14" lean-forward="true" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
           <folding>
-            <element signature="e#0#23#0" expanded="true" />
+            <element signature="e#0#37#0" expanded="true" />
           </folding>
         </state>
       </provider>
