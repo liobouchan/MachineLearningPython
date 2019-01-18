@@ -2,6 +2,7 @@ from __future__ import print_function
 
 import pandas as pd
 import matplotlib.pyplot as plt
+import numpy as np
 
 print("\nPrint pandas version " , pd.__version__)
 
@@ -38,3 +39,14 @@ print(cities['City name'][1])
 #Print from 0 to 2
 print("\n" ,type(cities[0:2]))
 print(cities[0:2])
+
+#pandas Series can be used as arguments to most NumPy functions:
+print("\n np.log(population) ", np.log(population))
+
+# Like the Python map function, Series.apply accepts as an argument a lambda function, which is applied to each value.
+print("\n population.apply(lambda val: val > 1000000) ", population.apply(lambda val: val > 1000000))
+
+#Modifying DataFrames is also straightforward.
+cities['Area square miles'] = pd.Series([46.87, 176.53, 97.92])
+cities['Population density'] = cities['Population'] / cities['Area square miles']
+print("\n Cities Modified" , cities)
