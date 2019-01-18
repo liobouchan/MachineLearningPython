@@ -25,3 +25,16 @@ print("\n Print DataFrame.head : \n" , california_housing_dataframe.head())
 #DataFrame.hist lets you quickly study the distribution of values in a column
 california_housing_dataframe.hist('housing_median_age')
 plt.show()
+
+#access DataFrame data using familiar Python dict/list operations
+cities = pd.DataFrame({ 'City name': city_names, 'Population': population })
+print("\n" , type(cities['City name']))
+print(cities['City name'])
+
+#Print the 1 position
+print("\n" ,type(cities['City name'][1]))
+print(cities['City name'][1])
+
+#Print from 0 to 2
+print("\n" ,type(cities[0:2]))
+print(cities[0:2])
