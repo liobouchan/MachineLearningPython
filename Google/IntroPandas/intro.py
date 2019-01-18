@@ -56,3 +56,15 @@ print("\n Cities Modified" , cities)
 #The city has an area greater than 50 square miles.
 cities['Is wide and has saint name'] = (cities['Area square miles'] > 50) & cities['City name'].apply(lambda name: name.startswith('San'))
 print(cities)
+
+#Both Series and DataFrame objects also define an index property that assigns an identifier value to each Series item or DataFrame row.
+print("\n city_names.index" , city_names.index)
+print("\n cities.index" , cities.index)
+
+#Call DataFrame.reindex to manually reorder the rows.
+print("\n cities.reindex([2, 0, 1])" , cities.reindex([2, 0, 1]))
+
+#Reindexing is a great way to shuffle (randomize) a DataFrame. In the example below, we take the index, which is array-like, and pass it to NumPy's random.permutation function, which shuffles its values in place. Calling reindex with this shuffled array causes the DataFrame rows to be shuffled in the same way.
+print("\n 1 reindex" , cities.reindex(np.random.permutation(cities.index)))
+print("\n 2 reindex" , cities.reindex(np.random.permutation(cities.index)))
+print("\n 3 reindex" , cities.reindex(np.random.permutation(cities.index)))
