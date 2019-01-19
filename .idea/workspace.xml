@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bb504c88-204c-453f-b8dd-ef2af89bfcfe" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Google/IntroPandas/intro.py" beforeDir="false" afterPath="$PROJECT_DIR$/Google/IntroPandas/intro.py" afterDir="false" />
-    </list>
+    <list default="true" id="bb504c88-204c-453f-b8dd-ef2af89bfcfe" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,7 +13,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Google/IntroPandas/intro.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
+            <state relative-caret-position="241">
               <caret line="64" column="65" lean-forward="true" selection-start-line="64" selection-start-column="65" selection-end-line="64" selection-end-column="65" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
@@ -52,10 +50,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="256" />
-    <option name="y" value="-866" />
-    <option name="width" value="1296" />
-    <option name="height" value="736" />
+    <option name="x" value="495" />
+    <option name="y" value="-904" />
+    <option name="width" value="864" />
+    <option name="height" value="491" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -219,7 +217,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.5362947" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.468039" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -256,7 +254,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Google/IntroPandas/intro.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
+        <state relative-caret-position="241">
           <caret line="64" column="65" lean-forward="true" selection-start-line="64" selection-start-column="65" selection-end-line="64" selection-end-column="65" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
