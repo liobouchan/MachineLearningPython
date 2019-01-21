@@ -91,6 +91,7 @@ results = estimator.predict(predict_input_fn)
 
 # Display predictions
 for movie_genres in results:
+  print("\n Results : " , results)
   print("\n movie_genres : ", movie_genres)
   top_2 = movie_genres['probabilities'].argsort()[-2:][::-1]
   print("Top 2 : " , top_2)
