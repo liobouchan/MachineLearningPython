@@ -7,16 +7,11 @@ import tensorflow_hub as hub
 
 from sklearn.preprocessing import MultiLabelBinarizer
 
-data = pd.read_csv('movies_metadata.csv')
-print("\n Data : \n" , data)
+data = pd.read_csv('movies_metadata.csv') #print("\n Data : \n" , data)
+descriptions = data['overview'] #print("\n Descriptions : \n" , descriptions)
+genres = data['genres'] #print("\n Genres : \n" , genres)
 
-descriptions = data['overview']
-print("\n Descriptions : \n" , descriptions)
-
-genres = data['genres']
-print("\n Genres : \n" , genres)
-
-top_genres = ['Comedy', 'Thriller', 'Romance', 'Action', 'Horror', 'Crime', 'Documentary', 'Adventure', 'Science Fiction']
+#top_genres = ['Comedy', 'Thriller', 'Romance', 'Action', 'Horror', 'Crime', 'Documentary', 'Adventure', 'Science Fiction']
 
 urllib.request.urlretrieve('https://storage.googleapis.com/bq-imports/descriptions.p', 'descriptions.p')
 urllib.request.urlretrieve('https://storage.googleapis.com/bq-imports/genres.p', 'genres.p')
@@ -87,6 +82,7 @@ raw_test = [
 
 # Generate predictions
 predict_input_fn = tf.estimator.inputs.numpy_input_fn({"descriptions": np.array(raw_test).astype(np.str)}, shuffle=False)
+print("\n predict_input_fn: \n" ,predict_input_fn)
 results = estimator.predict(predict_input_fn)
 
 # Display predictions
