@@ -1,3 +1,5 @@
+#https://www.tensorflow.org/hub/tutorials/text_classification_with_tf_hub
+
 import tensorflow as tf
 import tensorflow_hub as hub
 import matplotlib.pyplot as plt
@@ -39,3 +41,9 @@ def download_and_load_datasets(force_download = False):
                                         "aclImdb", "test"))
 
     return train_df, test_df
+
+# Reduce logging output.
+tf.logging.set_verbosity(tf.logging.ERROR)
+
+train_df, test_df = download_and_load_datasets()
+train_df.head()
