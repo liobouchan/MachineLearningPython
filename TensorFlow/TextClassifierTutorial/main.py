@@ -17,7 +17,7 @@ def load_directory_data(directory):
 
     for file_path in os.listdir(directory):
         with tf.gfile.GFile(os.path.join(directory , file_path) , "r") as f:
-            data["sentece"].append(f.read())
+            data["sentence"].append(f.read())
             data["sentiment"].append(re.match("\d+_(\d+)\.txt" , file_path).group(1))
     return pd.DataFrame.from_dict(data)
 
@@ -36,6 +36,7 @@ def download_and_load_datasets(force_download = False):
         origin="http://ai.stanford.edu/~amaas/data/sentiment/aclImdb_v1.tar.gz",
         extract=True)
 
+    print("Esta es la ruta : " , os.path.join(os.path.dirname(dataset), "aclImdb", "train"))
     train_df = load_dataset(os.path.join(os.path.dirname(dataset), "aclImdb", "train"))
     test_df = load_dataset(os.path.join(os.path.dirname(dataset),
                                         "aclImdb", "test"))
@@ -47,3 +48,4 @@ tf.logging.set_verbosity(tf.logging.ERROR)
 
 train_df, test_df = download_and_load_datasets()
 train_df.head()
+print(train_df.head())
