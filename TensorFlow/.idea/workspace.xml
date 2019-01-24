@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="59b2c2f3-5c45-41a8-9618-1e59d4fa1e94" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TextClassifierTutorial/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/TextClassifierTutorial/main.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,10 +15,14 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/TextClassifierTutorial/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="411">
-              <caret line="90" column="30" selection-start-line="90" selection-start-column="30" selection-end-line="90" selection-end-column="30" />
+            <state relative-caret-position="-345">
+              <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
               <folding>
                 <element signature="e#75#98#0" expanded="true" />
+                <element signature="e#330#686#0" />
+                <element signature="e#795#1056#0" />
+                <element signature="e#1159#1666#0" />
+                <element signature="e#1710#1782#0" />
               </folding>
             </state>
           </provider>
@@ -150,10 +153,14 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/TextClassifierTutorial/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
-          <caret line="90" column="30" selection-start-line="90" selection-start-column="30" selection-end-line="90" selection-end-column="30" />
+        <state relative-caret-position="-345">
+          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
           <folding>
             <element signature="e#75#98#0" expanded="true" />
+            <element signature="e#330#686#0" />
+            <element signature="e#795#1056#0" />
+            <element signature="e#1159#1666#0" />
+            <element signature="e#1710#1782#0" />
           </folding>
         </state>
       </provider>

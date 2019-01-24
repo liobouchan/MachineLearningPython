@@ -46,6 +46,8 @@ def download_and_load_datasets(force_download=False):
 
     return train_df, test_df
 
+def get_predictions(estimator, input_fn):
+  return [x["class_ids"][0] for x in estimator.predict(input_fn=input_fn)]
 
 # Reduce logging output.
 # tf.logging.set_verbosity(tf.logging.ERROR)
