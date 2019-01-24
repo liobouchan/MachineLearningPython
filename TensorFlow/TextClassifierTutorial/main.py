@@ -9,6 +9,9 @@ import pandas as pd
 import re
 import seaborn as sns
 
+LABELS = [
+    "negative", "positive"
+]
 
 # Load all files from a directory in a DataFrame
 def load_directory_data(directory):
