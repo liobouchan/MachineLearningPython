@@ -115,8 +115,30 @@ plt.ylabel("True");
 datos = {}
 datos["sentence"] = []
 datos["sentence"].append("Is the best movie in all the world")
+datos["sentence"].append("Is the best movie in all the world")
+datos["sentence"].append("Is the best movie in all the world")
+datos["sentence"].append("Is the best movie in all the world")
 print(datos)
 print(type(datos))
 dataframe = pd.DataFrame.from_dict(datos)
 print(dataframe)
 
+precict_input_fn = tf.estimator.inputs.pandas_input_fn(
+    dataframe, dataframe["sentence"], shuffle=False)
+
+print(precict_input_fn)
+adivina = estimator.predict(input_fn=precict_input_fn)
+print(adivina)
+print(type(adivina))
+
+#next(adivina)
+
+#print(*adivina , sep='\n')
+#adivina = dict(adivina)
+#print("DICCIONARIO " , adivina)
+#print(adivina['class_ids'][0])
+
+for prediccion in adivina:
+  class_id = prediccion['class_ids'][0]
+  probability = prediccion['probabilities'][class_id]
+  print('\nPrediction is "{}" ({:.1f}%)'.format(LABELS[class_id], 100 * probability) )
