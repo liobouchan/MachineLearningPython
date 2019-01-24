@@ -93,7 +93,30 @@ estimator.train(input_fn=train_input_fn, steps=1000);
 train_eval_result = estimator.evaluate(input_fn=predict_train_input_fn)
 test_eval_result = estimator.evaluate(input_fn=predict_test_input_fn)
 
-print("\nTraining set complete values ", train_eval_result)
-print("Test set complete values ", test_eval_result)
+print("\nTraining set complete values: ", train_eval_result)
+print("Test set complete values: ", test_eval_result)
 print("Training set accuracy: {accuracy}".format(**train_eval_result))
 print("Test set accuracy: {accuracy}".format(**test_eval_result))
+
+# Create a confusion matrix on training data.
+with tf.Graph().as_default():
+  cm = tf.confusion_matrix(train_df["polarity"],
+                           get_predictions(estimator, predict_train_input_fn))
+  with tf.Session() as session:
+    cm_out = session.run(cm)
+
+# Normalize the confusion matrix so that each row sums to 1.
+cm_out = cm_out.astype(float) / cm_out.sum(axis=1)[:, np.newaxis]
+
+sns.heatmap(cm_out, annot=True, xticklabels=LABELS, yticklabels=LABELS);
+plt.xlabel("Predicted");
+plt.ylabel("True");
+
+datos = {}
+datos["sentence"] = []
+datos["sentence"].append("Is the best movie in all the world")
+print(datos)
+print(type(datos))
+dataframe = pd.DataFrame.from_dict(datos)
+print(dataframe)
+
