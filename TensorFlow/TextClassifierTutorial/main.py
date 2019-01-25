@@ -9,6 +9,8 @@ import pandas as pd
 import re
 import seaborn as sns
 
+from pathlib import Path
+
 LABELS = [
     "negative", "positive"
 ]
@@ -37,15 +39,19 @@ def load_dataset(directory):
 
 # Download and process the dataset files.
 def download_and_load_datasets(force_download=False):
-    dataset = tf.keras.utils.get_file(
-        fname="aclImdb.tar.gz",
-        origin="http://ai.stanford.edu/~amaas/data/sentiment/aclImdb_v1.tar.gz",
-        extract=True)
-
-    print("\nEsta es la ruta : ", os.path.join(os.path.dirname(dataset), "aclImdb", "train"))
-    train_df = load_dataset(os.path.join(os.path.dirname(dataset), "aclImdb", "train"))
-    test_df = load_dataset(os.path.join(os.path.dirname(dataset),
-                                        "aclImdb", "test"))
+    #dataset = tf.keras.utils.get_file(
+    #    fname="aclImdb.tar.gz",
+    #    origin="http://ai.stanford.edu/~amaas/data/sentiment/aclImdb_v1.tar.gz",
+    #    extract=True)
+    mypath = Path().absolute()
+    print("Esta es mi path " , mypath)
+    #print("Esto es el dataSet " , dataset)
+    #print("No se que es esto " , os.path.dirname(dataset))
+    #print("\nEsta es la ruta : ", os.path.join(os.path.dirname(dataset), "aclImdb", "train"))
+    #train_df = load_dataset(os.path.join(os.path.dirname(dataset), "aclImdb", "train"))
+    #test_df = load_dataset(os.path.join(os.path.dirname(dataset), "aclImdb", "test"))
+    train_df = load_dataset(os.path.join(mypath, "aclImdb", "train"))
+    test_df = load_dataset(os.path.join(mypath, "aclImdb", "test"))
 
     return train_df, test_df
 
@@ -118,6 +124,10 @@ datos["sentence"].append("Is the best movie in all the world")
 datos["sentence"].append("Is the best movie in all the world")
 datos["sentence"].append("Is the best movie in all the world")
 datos["sentence"].append("Is the best movie in all the world")
+datos["sentence"].append("Esta es la película más caca y fea jamás antes vista")
+datos["sentence"].append("Pinche pelicula culera carnal")
+datos["sentence"].append("Esta película está bien hermosa, es una obra de arte que podría ver mil veces y una vez más.")
+
 print(datos)
 print(type(datos))
 dataframe = pd.DataFrame.from_dict(datos)
