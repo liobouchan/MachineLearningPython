@@ -84,7 +84,7 @@ predict_test_input_fn = tf.estimator.inputs.pandas_input_fn(test_df,
 
 embedded_text_feature_column = hub.text_embedding_column(
     key="sentence",
-    module_spec="https://tfhub.dev/google/nnlm-es-dim128-with-normalization/1")
+    module_spec="https://tfhub.dev/google/nnlm-es-dim128-with-normalization/1   Q")
 
 estimator = tf.estimator.DNNClassifier(
     hidden_units=[500, 100],
